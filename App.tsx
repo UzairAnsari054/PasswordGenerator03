@@ -100,11 +100,8 @@ export default function App() {
           <View style={styles.inputColumn}>
             <Text style={styles.heading}>Password Length</Text>
             {touched.passwordLength && errors.passwordLength && (
-              <Text style={styles.errorText}>
-                {errors.passwordLength}
-              </Text>
-            )}
-            
+              <Text style={styles.errorText}>{errors.passwordLength}</Text>
+            )}        
           </View>
           <TextInput
             style={styles.inputStyle}
@@ -150,6 +147,7 @@ export default function App() {
                     fillColor="#FC80A5"
                   />
                 </View>
+
          <View style={styles.formActions}>
           <TouchableOpacity
           disabled={!isValid}
@@ -158,6 +156,7 @@ export default function App() {
           >
             <Text style={styles.primaryBtnTxt}>Generate Password</Text>
           </TouchableOpacity>
+
           <TouchableOpacity
           style={styles.secondaryBtn}
           onPress={ () => {
@@ -167,6 +166,7 @@ export default function App() {
           >
             <Text style={styles.secondaryBtnTxt}>Reset</Text>
           </TouchableOpacity>
+          
          </View>
          </>
        )}
