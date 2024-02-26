@@ -70,8 +70,6 @@ export default function App() {
     setupperCase(false)
     setNumbers(false)
     setSymbols(false)
-    
-    
   }
 
   return (
